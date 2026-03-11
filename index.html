@@ -84,6 +84,13 @@
         productName: "Snow",
         productVersion: "0.1.0",
         showBanner: unityShowBanner,
+
+        webglContextAttributes: {
+          alpha: false,
+          antialias: true,
+          powerPreference: "high-performance",
+          preserveDrawingBuffer: false
+        }
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
@@ -103,7 +110,7 @@
         container.className = "unity-mobile";
         canvas.className = "unity-mobile";
 
-         config.devicePixelRatio = 1;
+        config.devicePixelRatio = 1;
       }
 
       loadingBar.style.display = "block";
